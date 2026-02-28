@@ -1,9 +1,26 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,700|Quattrocento:700');
+@import url('https://fonts.googleapis.com/css2?family=Beth+Ellen&family=IM+Fell+English:ital@0;1&display=swap');
+
+:root {
+    --bg-light: #fff5e9;
+
+    --color-light-1: #4a3e2d;
+    --color-light-2: #dacdbb;
+    --color-light-3: #a5852c;
+
+    --bg-dark: #4a3e2d;
+
+    --color-dark-1: #fff5e9;
+    --color-dark-2: #877a69;
+    --color-dark-3: #a5852c;
+
+    --font-head: "Beth Ellen";
+    --font-body: "IM Fell English";
+}
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: var(--font-body);
     font-weight: lighter;
-    background: white;
+    background: var(--bg-light);
     overflow: hidden;
 }
 
@@ -16,22 +33,23 @@ body {
 h1,
 h2 {
     text-align: center;
-    font-family: "Quattrocento", Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--font-head);
+    color: var(--color-light-1);
     margin: 0;
     padding: 0;
 }
 
 h1 {
-    font-size: 30pt;
+    font-size: 20pt;
     margin-bottom: 10px;
 }
 
 h2 {
-    font-size: 14pt;
+    font-size: 16pt;
     font-style: italic;
-    font-family: sans-serif;
+    font-family: var(--font-body);
     font-weight: lighter;
-    color: #BBB;
+    color: var(--color-light-2);
 }
 
 .header {
@@ -50,13 +68,13 @@ h2 {
 .written-in-ink {
     z-index: 3;
     font-size: 9pt;
-    font-family: sans-serif;
+    font-family: var(--font-body);
     text-align: center;
     font-weight: 700;
     position: fixed;
     display: block;
     width: 100%;
-    background: white;
+    background: var(--bg-light);
     margin: 0;
     padding-top: 6px;
     padding-bottom: 6px;
@@ -104,7 +122,7 @@ h2 {
     margin: 0 auto;
     padding: 20px;
     padding-top: 4em;
-    background: white;
+    background: var(--bg-light);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -115,28 +133,28 @@ h2 {
 
 p {
     font-size: 13pt;
-    color: #888;
+    color: var(--color-light-1);
     line-height: 1.7em;
     font-weight: lighter;
 }
 
 a {
     font-weight: 700;
-    color: #b97c2c;
-    font-family: sans-serif;
+    color: var(--color-light-3);
+    font-family: var(--font-body);
     text-decoration: none;
 }
 
 .unclickable {
     font-weight: 700;
-    color: #4f3411;
-    font-family: sans-serif;
+    color: var(--color-light-2);
+    font-family: var(--font-body);
     text-decoration: none;
     cursor: not-allowed;
 }
 
 a:hover {
-    color: black;
+    color: var(--color-light-1);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -222,7 +240,7 @@ img {
     right: 14px;
     top: 4px;
     user-select: none;
-    background: white;
+    background: var(--bg-light);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -232,7 +250,7 @@ img {
 }
 
 #controls [disabled] {
-    color: #ccc;
+    color: var(--color-light-2);
 }
 
 #controls>*:not(:last-child):after {
@@ -255,24 +273,32 @@ img {
 */
 
 body.dark {
-    background: black;
-    color: white;
+    background: var(--bg-dark);
+    color: var(--color-dark-1);
+}
+
+.dark h1 {
+    color: var(--color-dark-1);
 }
 
 .dark h2 {
-    color: #666;
+    color: var(--color-dark-2);
 }
 
 .dark .container {
-    background: black;
+    background: var(--bg-dark);
 }
 
 .dark .written-in-ink {
-    background: black;
+    background: var(--bg-dark);
+}
+
+.dark p {
+    color: var(--color-dark-1);
 }
 
 .dark a {
-    color: #cc8f1a;
+    color: var(--color-dark-3);
 }
 .dark .unclickable{
     color: #c4af87;
@@ -280,7 +306,7 @@ body.dark {
 }
 
 .dark a:hover {
-    color: white;
+    color: var(--color-dark-1);
 }
 
 @media screen and (prefers-reduced-motion: no-preference) {
@@ -294,7 +320,7 @@ body.dark {
 }
 
 .dark #controls [disabled] {
-    color: #444;
+    color: var(--color-dark-2);
 }
 
 .dark .end {
@@ -302,7 +328,7 @@ body.dark {
 }
 
 .dark #controls {
-    background: black;
+    background: var(--bg-dark);
 }
 
 .quote {
