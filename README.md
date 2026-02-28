@@ -6,7 +6,7 @@ This project is an interactive retelling of William Shakespeare’s *Romeo and J
 
 The original story can be found [here](https://www.folger.edu/explore/shakespeares-works/romeo-and-juliet/read/).
 
-Play *Rewriting the Stars: An Interactive Retelling of Romeo & Juliet* [here](link here).
+Play *Rewriting the Stars: An Interactive Retelling of Romeo & Juliet* [here](https://rpaigemei.github.io/DIG6551-Creative-Project-1/).
 
 ###### Word Count: 1485
 ---
